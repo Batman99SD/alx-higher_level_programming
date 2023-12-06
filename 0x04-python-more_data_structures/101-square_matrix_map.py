@@ -2,9 +2,9 @@
 # -----------------------------------------------------------
 # Python program that:
 # demonstrates how to compute the square value of all integers of a matrix
+# using map
 # -----------------------------------------------------------
 
 
-def square_matrix_simple(matrix=[]):
-    new_matrix = [[number**2 for number in row] for row in matrix]
-    return new_matrix
+def square_matrix_map(matrix=[]):
+    return list(map(lambda x: list(map(lambda i: i ** 2, x)), matrix))

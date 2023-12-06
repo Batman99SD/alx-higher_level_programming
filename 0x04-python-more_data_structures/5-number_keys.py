@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 # -----------------------------------------------------------
 # Python program that:
-# demonstrates how to return a set of common elements in two sets
+# demonstrates how to return the number of keys in a dictionary
 # -----------------------------------------------------------
 
 
-def common_elements(set_1, set_2):
-    return set_1 & set_2
+def number_keys(a_dictionary):
+    return len(a_dictionary.keys())
